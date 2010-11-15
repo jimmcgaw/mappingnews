@@ -11130,3 +11130,597 @@ Migrating to CreateTagLinks (20101114173738)
   [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `tags`[0m
   [4;35;1mSQL (0.7ms)[0m   [0mdescribe `tags`[0m
   [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `tags`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 21:47:55) [GET]
+
+ActionView::MissingTemplate (Missing template news/search.erb in view path app/views):
+  
+
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 21:49:46) [GET]
+Rendering template within layouts/application
+Rendering news/search
+Completed in 105ms (View: 103, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 21:49:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 21:49:46) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.4.min" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 21:49:57) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>""}
+Rendering template within layouts/application
+Rendering news/search
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 21:49:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 21:49:57) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.4.min" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 21:57:45) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>""}
+
+URI::InvalidURIError (bad URI(is not URI?): http://news.google.com/news?pz=1&cf=all&ned=us&hl=en&q=#{search_text}&cf=all&output=rss):
+  /usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  /usr/lib/ruby/1.8/open-uri.rb:29:in `open'
+  app/controllers/news_controller.rb:20:in `get_news'
+  app/controllers/news_controller.rb:10:in `search'
+
+Rendered rescues/_trace (55.6ms)
+Rendered rescues/_request_and_response (9.8ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 21:59:26) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>""}
+
+URI::InvalidURIError (bad URI(is not URI?): http://news.google.com/news?pz=1&cf=all&ned=us&hl=en&q=#{search_text}&cf=all&output=rss):
+  /usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  /usr/lib/ruby/1.8/open-uri.rb:29:in `open'
+  app/controllers/news_controller.rb:20:in `get_news'
+  app/controllers/news_controller.rb:10:in `search'
+
+Rendered rescues/_trace (57.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 21:59:34) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"obama"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://news.google.com/news?pz=1&cf=all&ned=us&hl=en&q=#{search_text}&cf=all&output=rss):
+  /usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  /usr/lib/ruby/1.8/open-uri.rb:29:in `open'
+  app/controllers/news_controller.rb:20:in `get_news'
+  app/controllers/news_controller.rb:10:in `search'
+
+Rendered rescues/_trace (195.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:01:36) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"obama"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://news.google.com/news?pz=1&cf=all&ned=us&hl=en&q=#{search_text}&cf=all&output=rss):
+  /usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  /usr/lib/ruby/1.8/open-uri.rb:29:in `open'
+  app/controllers/news_controller.rb:21:in `get_news'
+  app/controllers/news_controller.rb:10:in `search'
+
+Rendered rescues/_trace (88.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:01:57) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"obama"}
+
+URI::InvalidURIError (bad URI(is not URI?): http://news.google.com/news?pz=1&cf=all&ned=us&hl=en&q=#{search_text}&cf=all&output=rss):
+  /usr/lib/ruby/1.8/uri/common.rb:436:in `split'
+  /usr/lib/ruby/1.8/uri/common.rb:485:in `parse'
+  /usr/lib/ruby/1.8/open-uri.rb:29:in `open'
+  app/controllers/news_controller.rb:21:in `get_news'
+  app/controllers/news_controller.rb:10:in `search'
+
+Rendered rescues/_trace (76.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:03:53) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"obama"}
+
+NameError (uninitialized constant NewsController::MaxRSSItems):
+  app/controllers/news_controller.rb:21:in `get_news'
+  app/controllers/news_controller.rb:10:in `search'
+
+Rendered rescues/_trace (47.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:04:42) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"obama"}
+Rendering template within layouts/application
+Rendering news/search
+Completed in 675ms (View: 33, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:04:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:04:42) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.4.min" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:14:53) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"obama"}
+Rendering template within layouts/application
+Rendering news/search
+
+ActionView::TemplateError (undefined method `title' for #<Array:0xb64995b0>) on line #9 of app/views/news/search.html.erb:
+6: <% end %>
+7: <br />
+8: <% if @rss %>
+9: 	<%= @rss.title %>
+10: <% end %>
+
+    app/views/news/search.html.erb:9
+
+Rendered rescues/_trace (157.4ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:15:33) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"obama"}
+Rendering template within layouts/application
+Rendering news/search
+Completed in 493ms (View: 9, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:15:34) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:15:34) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.4.min" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:15:47) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"obama"}
+Rendering template within layouts/application
+Rendering news/search
+
+ActionView::TemplateError (undefined method `url' for #<RSS::Rss::Channel::Item:0xb6388360>) on line #10 of app/views/news/search.html.erb:
+7: <br />
+8: <% if @rss %>
+9: 	<% for item in @rss %>
+10: 		<%= link_to item.title, item.url %>
+11: 	<% end %>
+12: <% end %>
+
+    app/views/news/search.html.erb:10
+    app/views/news/search.html.erb:9:in `each'
+    app/views/news/search.html.erb:9
+
+Rendered rescues/_trace (56.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:16:13) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"obama"}
+Rendering template within layouts/application
+Rendering news/search
+Completed in 590ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:16:13) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:16:13) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.4.min" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:16:20) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"obama"}
+Rendering template within layouts/application
+Rendering news/search
+Completed in 893ms (View: 18, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:16:21) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:16:21) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.4.min" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:17:09) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"obama"}
+Rendering template within layouts/application
+Rendering news/search
+Completed in 621ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:17:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:17:09) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.4.min" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:17:15) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"glenn beck"}
+Rendering template within layouts/application
+Rendering news/search
+Completed in 432ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:17:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:17:16) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.4.min" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:17:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:17:24) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.4.min" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:17:28) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"obama"}
+Rendering template within layouts/application
+Rendering news/search
+Completed in 583ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:17:29) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:17:29) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.4.min" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:18:21) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"obama"}
+Rendering template within layouts/application
+Rendering news/search
+
+ActionView::TemplateError (undefined method `content' for #<RSS::Rss::Channel::Item:0xb642e6e8>) on line #11 of app/views/news/search.html.erb:
+8: <% if @rss %>
+9: 	<% for item in @rss %>
+10: 		<%= link_to item.title, item.link %><br />
+11: 		<%= item.content %><br />
+12: 	<% end %>
+13: <% end %>
+
+    app/views/news/search.html.erb:11
+    app/views/news/search.html.erb:9:in `each'
+    app/views/news/search.html.erb:9
+
+Rendered rescues/_trace (60.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:20:08) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"obama"}
+Rendering template within layouts/application
+Rendering news/search
+Completed in 571ms (View: 20, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:20:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:20:09) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.4.min" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:21:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (8.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:21:00) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.4.min" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:21:05) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"red cross"}
+Rendering template within layouts/application
+Rendering news/search
+Completed in 500ms (View: 13, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:21:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:21:06) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.4.min" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:22:40) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"puke"}
+Rendering template within layouts/application
+Rendering news/search
+Completed in 528ms (View: 11, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:22:41) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:22:41) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.4.min" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-14 22:22:52) [POST]
+  Parameters: {"authenticity_token"=>"PyzAS4NHMo2LuvBLbfMTMGw8TUqO/9IZr6rJ7RXZloE=", "q"=>"sarah palin"}
+Rendering template within layouts/application
+Rendering news/search
+Completed in 447ms (View: 12, DB: 0) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:22:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/styles.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-11-14 22:22:52) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/jquery-1.4.4.min" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
