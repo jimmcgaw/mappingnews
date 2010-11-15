@@ -3,7 +3,7 @@ class CreateTags < ActiveRecord::Migration
     create_table :tags do |t|
       t.string :name
       t.text :description
-
+      t.integer :parent_id, :null => true
       t.timestamps
     end
   end
