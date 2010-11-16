@@ -1,0 +1,47 @@
+*{margin:0;padding:0;}
+
+body {
+	background-color:#39424b;
+}
+
+div#middle{
+	background-color:white;
+	width:960px;
+	margin:0 auto;
+}
+
+div#banner{
+	height:60px;
+	padding:10px;
+}
+
+div#content{
+	padding:10px;
+}
+
+div#numbers{
+	width:960px;
+}
+
+div.number{
+	width:80px;
+	height:80px;
+	padding:5px;
+	margin-right:5px;
+	background-color:#39424B;
+	color:white;
+	font-weight:bold;
+	float:left;
+	font-size:48px;
+	text-align:center;
+	line-height:80px;
+	vertical-align:middle;
+	display:none;
+}
+
+input.button{
+	font-weight:bold;
+	color:white;
+	padding:5px;
+	background-color:maroon;
+}

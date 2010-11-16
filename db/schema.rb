@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101115193829) do
+ActiveRecord::Schema.define(:version => 20101115224222) do
 
   create_table "mappoints", :force => true do |t|
     t.integer  "tag_id",        :null => false
@@ -17,6 +17,18 @@ ActiveRecord::Schema.define(:version => 20101115193829) do
     t.float    "long",          :null => false
     t.integer  "parent_tag_id"
     t.string   "parent_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "search_terms", :force => true do |t|
+    t.string   "keywords"
+    t.integer  "search_id",  :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "searches", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end

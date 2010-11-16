@@ -1,13 +1,20 @@
-<h2>Search News</h2>
-
-<% form_tag index_url, :method => :post do %>
-	<input type="text" name="q" value="<%= @q if @q %>" />
-	<input type="submit" value="Search" class="button" />
+<% form_tag index_url, :method => :get do %>
+	<input type="text" name="q" value="<%= @q if @q %>" size="50" />
+	<input type="submit" value="Search News" class="button" />
 <% end %>
 <br />
+<div id="past_searches" style="float:right;width:280px;padding:10px;">
+	<h3>Recent Searches</h3>
+	<% for recent_search in @recent_searches %>
+		<%= link_to recent_search.keywords, index_url + '?q=' + recent_search.keywords_uri %><br />
+	<% end %>
+</div>
+<div id="results" style="float:left;width:600px;text-align:left;">
 <% if @rss %>
 	<% for item in @rss %>
 		<%= link_to item.title, item.link %><br />
-		<%= item.description %><br />
 	<% end %>
+<% else %>
+	[enter a search above]
 <% end %>
+</div>

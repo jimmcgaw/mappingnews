@@ -7,4 +7,16 @@ class ApplicationController < ActionController::Base
 
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
+  
+  private
+  
+  def intialize_session_search
+    if session[:search_id]
+      @search = Search.find(session[:search_id])
+    else
+      @search = Search.create
+      session[:search_id] = @search.id
+    end
+  end
+  
 end

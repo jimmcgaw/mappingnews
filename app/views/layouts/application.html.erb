@@ -12,9 +12,12 @@
 		</div>
 		<div id="content">
 			<%= yield %>
+			<div style="clear:both;"></div>
 		</div>
 	</div>
 	<%= javascript_include_tag 'jquery-1.4.4.min' %>
+	<%= javascript_include_tag 'gears_init' %>
+	<%= javascript_include_tag 'geo' %>
 	<%= javascript_include_tag 'application' %>
 </body> 
 </html>
