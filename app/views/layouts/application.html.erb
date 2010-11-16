@@ -8,6 +8,10 @@
 <body>
 	<div id="middle">
 		<div id="banner">
+			<div id="map-container" class="hidden">
+				<div id="map"></div>
+				<div style="float:right;">You Are Here &raquo;</div>
+			</div>
 			<h1>Mapping News</h1> 
 		</div>
 		<div id="content">
@@ -18,6 +22,7 @@
 	<%= javascript_include_tag 'jquery-1.4.4.min' %>
 	<%= javascript_include_tag 'gears_init' %>
 	<%= javascript_include_tag 'geo' %>
+	<%= javascript_include_tag 'polymaps.min' %>
 	<%= javascript_include_tag 'application' %>
 </body> 
 </html>

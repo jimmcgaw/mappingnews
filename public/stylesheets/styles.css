@@ -11,8 +11,19 @@ div#middle{
 }
 
 div#banner{
-	height:60px;
+	height:100px;
 	padding:10px;
+}
+
+div#banner div#map-container{
+	width:300px;
+	float:right;
+}
+
+div#banner div#map-container div#map{
+	height:80px;
+	width:120px;
+	float:right;
 }
 
 div#content{
@@ -45,3 +56,5 @@ input.button{
 	padding:5px;
 	background-color:maroon;
 }
+
+.hidden{display:none;}
