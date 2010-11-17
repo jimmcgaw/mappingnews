@@ -44838,3 +44838,16 @@ Rendered news/_news_result (1.8ms)
 Rendered news/_news_result (1.9ms)
 Rendered news/_news_result (1.8ms)
 Completed in 1384ms (View: 28, DB: 11) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (56.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-17 10:06:26) [GET]
+  [4;36;1mSearch Columns (163.6ms)[0m   [0;1mSHOW FIELDS FROM `searches`[0m
+  [4;35;1mSQL (9.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mSearch Create (53.1ms)[0m   [0;1mINSERT INTO `searches` (`created_at`, `updated_at`) VALUES('2010-11-17 18:06:26', '2010-11-17 18:06:26')[0m
+  [4;35;1mSQL (14.7ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSearchTerm Load (45.3ms)[0m   [0;1mSELECT * FROM `search_terms` WHERE (`search_terms`.search_id = 5) ORDER BY updated_at DESC LIMIT 10[0m
+Rendering template within layouts/application
+Rendering news/search
+Completed in 859ms (View: 148, DB: 344) | 200 OK [http://localhost/]
