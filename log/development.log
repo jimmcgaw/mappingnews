@@ -31396,3 +31396,7 @@ Processing NewsController#search (for 127.0.0.1 at 2010-11-15 19:20:30) [GET]
 Rendering template within layouts/application
 Rendering news/search
 Completed in 1144ms (View: 15, DB: 37) | 200 OK [http://localhost/?q=red+cross]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mTag Load (0.4ms)[0m   [0;1mSELECT * FROM `tags` LIMIT 1[0m
+  [4;35;1mTag Columns (18.2ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
