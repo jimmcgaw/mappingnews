@@ -1,20 +1,29 @@
-<% form_tag index_url, :method => :get do %>
-	<input type="text" name="q" value="<%= @q if @q %>" size="50" />
-	<input type="submit" value="Search News" class="button" />
+<% form_tag index_url, :method => :post, :id => "search_form" do %>
+	<input type="search" name="q" id="q" value="<%= @q if @q %>" placeholder="Enter search terms" size="50" required />
+	<!--input type="submit" value="Search News" class="button" /-->
 <% end %>
 <br />
-<div id="past_searches" style="float:right;width:280px;padding:10px;">
+<div id="map-container">
+	<div id="map">
+		
+	</div>
+</div>
+
+<div id="results-container">
+	<h3>Search Results</h3>
+	<div id="results">
+		
+		<% if @rss %>
+			<%= render :partial => 'news_result', :collection => @rss, :as => :item %>
+		<% end %>
+	</div>
+</div>
+
+<div id="past_searches">
 	<h3>Recent Searches</h3>
 	<% for recent_search in @recent_searches %>
-		<%= link_to recent_search.keywords, index_url + '?q=' + recent_search.keywords_uri %><br />
+		<%= link_to recent_search.keywords, "javascript:void(0);" %><br />
 	<% end %>
 </div>
-<div id="results" style="float:left;width:600px;text-align:left;">
-<% if @rss %>
-	<% for item in @rss %>
-		<%= link_to item.title, item.link %><br />
-	<% end %>
-<% else %>
-	[enter a search above]
-<% end %>
-</div>
+
+<input type="hidden" id="store_search_url" value="/search" />

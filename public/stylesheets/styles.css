@@ -15,17 +15,6 @@ div#banner{
 	padding:10px;
 }
 
-div#banner div#map-container{
-	width:300px;
-	float:right;
-}
-
-div#banner div#map-container div#map{
-	height:80px;
-	width:120px;
-	float:right;
-}
-
 div#content{
 	padding:10px;
 }
@@ -58,3 +47,38 @@ input.button{
 }
 
 .hidden{display:none;}
+
+div#past_searches{
+	float:left;
+	clear:both;
+	width:200px;
+	padding:10px;
+}
+
+div#results-container{
+	float:right;
+	width:450px;
+	text-align:left;
+}
+
+div#map-container{
+	float:left;
+	width:450px;
+	text-align:left;
+}
+
+div#map-container div#map{
+	height:300px;
+	width:450px;
+}
+
+div#results a{
+	color:maroon;
+	font-size:14px;
+	text-decoration:none;
+	line-height:22px;
+}
+
+div#results a:hover{
+	text-decoration:underline;
+}
