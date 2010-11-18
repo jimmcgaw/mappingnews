@@ -154,9 +154,13 @@ MappingNews.plot_points = function(){
 
 MappingNews.prepareSearchForm = function(){
 	var search_form = jQuery("form#search_form");
-	search_form.submit(MappingNews.load_results);
+	search_form.submit(function(e){
+		MappingNews.load_results(e);
+	});
 	var search_box = jQuery("form#search_form input#q");
-	search_box.keyup(jQuery.defer(600, MappingNews.load_results));
+	search_box.keyup(jQuery.defer(600, function(e){
+		MappingNews.load_results(e);
+	}));
 };
 
 MappingNews.prepareRecentSearchLinks = function(){

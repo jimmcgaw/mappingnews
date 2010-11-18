@@ -47670,3 +47670,85 @@ Rendered news/_news_result (9.4ms)
 Rendered news/_news_result (3.4ms)
 Rendered news/_news_result (39.4ms)
 Completed in 1613ms (View: 161, DB: 49) | 200 OK [http://localhost/]
+  [4;36;1mSQL (31.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-17 19:11:42) [GET]
+  [4;36;1mSearch Columns (34.0ms)[0m   [0;1mSHOW FIELDS FROM `searches`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSearch Create (81.1ms)[0m   [0;1mINSERT INTO `searches` (`created_at`, `updated_at`) VALUES('2010-11-18 03:11:43', '2010-11-18 03:11:43')[0m
+  [4;35;1mSQL (6.3ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSearchTerm Load (24.4ms)[0m   [0;1mSELECT * FROM `search_terms` WHERE (`search_terms`.search_id = 4) ORDER BY updated_at DESC LIMIT 10[0m
+Rendering template within layouts/application
+Rendering news/search
+Completed in 229ms (View: 43, DB: 177) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-17 19:11:47) [POST]
+  Parameters: {"authenticity_token"=>"CcMKamvjY67xcatEA9KJTnUuo08Mlge5HafGQVUnRk0=", "q"=>"obama"}
+  [4;35;1mSearch Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `searches`[0m
+  [4;36;1mSearch Load (0.3ms)[0m   [0;1mSELECT * FROM `searches` WHERE (`searches`.`id` = 4) [0m
+  [4;35;1mSearchTerm Load (0.1ms)[0m   [0mSELECT * FROM `search_terms` WHERE (`search_terms`.search_id = 4) ORDER BY updated_at DESC LIMIT 10[0m
+  [4;36;1mTag Load (34.3ms)[0m   [0;1mSELECT * FROM `tags` [0m
+  [4;35;1mTag Columns (21.6ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mMappoint Load (24.8ms)[0m   [0;1mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 261) [0m
+  [4;35;1mMappoint Load (1.2ms)[0m   [0mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 405) [0m
+  [4;36;1mMappoint Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `mappoints`[0m
+  [4;35;1mMappoint Load (1.2ms)[0m   [0mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 500) [0m
+  [4;36;1mMappoint Load (1.2ms)[0m   [0;1mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 504) [0m
+  [4;35;1mMappoint Load (1.2ms)[0m   [0mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 683) [0m
+  [4;36;1mMappoint Load (1.2ms)[0m   [0;1mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 456) [0m
+  [4;35;1mMappoint Load (1.2ms)[0m   [0mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 689) [0m
+  [4;36;1mMappoint Load (1.2ms)[0m   [0;1mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 48) [0m
+Rendered news/_news_result (2.5ms)
+Rendered news/_news_result (1.1ms)
+Rendered news/_news_result (1.0ms)
+Rendered news/_news_result (1.0ms)
+Rendered news/_news_result (1.1ms)
+Rendered news/_news_result (0.9ms)
+Rendered news/_news_result (1.3ms)
+Rendered news/_news_result (4.3ms)
+Rendered news/_news_result (1.0ms)
+Rendered news/_news_result (1.2ms)
+Completed in 979ms (View: 23, DB: 91) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing NewsController#search (for 127.0.0.1 at 2010-11-17 19:11:55) [POST]
+  Parameters: {"authenticity_token"=>"CcMKamvjY67xcatEA9KJTnUuo08Mlge5HafGQVUnRk0=", "q"=>"george bush"}
+  [4;35;1mSearch Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `searches`[0m
+  [4;36;1mSearch Load (0.1ms)[0m   [0;1mSELECT * FROM `searches` WHERE (`searches`.`id` = 4) [0m
+  [4;35;1mSearchTerm Load (0.1ms)[0m   [0mSELECT * FROM `search_terms` WHERE (`search_terms`.search_id = 4) ORDER BY updated_at DESC LIMIT 10[0m
+  [4;36;1mTag Load (0.5ms)[0m   [0;1mSELECT * FROM `tags` [0m
+  [4;35;1mTag Columns (10.3ms)[0m   [0mSHOW FIELDS FROM `tags`[0m
+  [4;36;1mMappoint Load (1.2ms)[0m   [0;1mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 256) [0m
+  [4;35;1mMappoint Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `mappoints`[0m
+  [4;36;1mMappoint Load (0.1ms)[0m   [0;1mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 261) [0m
+  [4;35;1mMappoint Load (0.1ms)[0m   [0mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 405) [0m
+  [4;36;1mMappoint Load (1.2ms)[0m   [0;1mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 423) [0m
+  [4;35;1mMappoint Load (0.1ms)[0m   [0mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 500) [0m
+  [4;36;1mMappoint Load (0.1ms)[0m   [0;1mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 504) [0m
+  [4;35;1mMappoint Load (1.2ms)[0m   [0mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 769) [0m
+  [4;36;1mMappoint Load (1.2ms)[0m   [0;1mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 194) [0m
+  [4;35;1mMappoint Load (1.2ms)[0m   [0mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 625) [0m
+  [4;36;1mMappoint Load (1.2ms)[0m   [0;1mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 185) [0m
+  [4;35;1mMappoint Load (1.2ms)[0m   [0mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 626) [0m
+  [4;36;1mMappoint Load (1.2ms)[0m   [0;1mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 295) [0m
+  [4;35;1mMappoint Load (1.2ms)[0m   [0mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 325) [0m
+  [4;36;1mMappoint Load (1.2ms)[0m   [0;1mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 738) [0m
+  [4;35;1mMappoint Load (1.2ms)[0m   [0mSELECT * FROM `mappoints` WHERE (`mappoints`.tag_id = 716) [0m
+Rendered news/_news_result (1.6ms)
+Rendered news/_news_result (1.1ms)
+Rendered news/_news_result (1.1ms)
+Rendered news/_news_result (1.0ms)
+Rendered news/_news_result (1.1ms)
+Rendered news/_news_result (1.3ms)
+Rendered news/_news_result (1.0ms)
+Rendered news/_news_result (4.4ms)
+Rendered news/_news_result (1.1ms)
+Rendered news/_news_result (1.1ms)
+Completed in 980ms (View: 17, DB: 27) | 200 OK [http://localhost/]
