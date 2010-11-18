@@ -1,2 +1,8 @@
-<%= link_to item.title, item.link, :target => "_blank" %>
-(Coordinates: <%= item.latitude %>, <%= item.longitude %>)<br />
+<%= link_to item.title, item.link, :target => "_blank", :id => item.id %>
+<% if item.latitude and item.longitude %>
+<span class="coordinates" style="display:none;">
+	<span class="latitude"><%= item.latitude %></span>
+	<span class="longitude"><%= item.longitude %></span>
+</span>
+<% end %>
+<br />
